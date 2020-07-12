@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+	padding: 0;
+	height: 100vh;
+    width: 100vw;
+    padding-top: 5%;
+    display: block;
+}
+.card {
+    width: 54%;
+    margin-left: 23%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+.card-header {
+    font-size: 26px;
+    text-align: center;
+    color: #1E1E1E;
+}
+.header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    padding: 10px;
+    font-size: 19px;
+    color: rgb(196, 198, 207);
+}
+.header div:first-child,
+.header div:nth-child(3),
+.header div:nth-child(5),
+.header div:nth-child(7) {
+    text-align: right;
+    padding-right: 10px;
+    color: #1E1E1E;
+}
+.header div:last-child,
+.header div:nth-child(2),
+.header div:nth-child(4),
+.header div:nth-child(6) {
+    text-align: left;
+    padding-left: 10px;
+    color: #4E4E4E;
+}
+.header-item {
+    border: 0.07px solid #E4E6EE;
+}
+.body-card {
+    padding-top: 10px;
+}
+.grid-body {
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+    grid-template-rows: auto;
+}
+.grid-body div:nth-child(2) {
+    border-top-left-radius: 15px;
+}
+.grid-body div:last-child {
+    border-bottom-right-radius: 15px;
+}
+.grid-body div:nth-child(4) {
+    border-top-right-radius: 15px;
+}
+.grid-body div:nth-child(5) {
+    border-bottom-left-radius: 15px;
+}
+.item {
+    border: 1px solid #E4E6EE;
+    padding: 20px;
+    font-size: 16px;
+    text-align: left;
+    color: black;
+}
+.item > label {
+    cursor: pointer;
+}
+.item > label:hover {
+    color: rgb(77, 73, 73);
+    font-weight: bold;
+    cursor: pointer;
+}
+.grid-header {
+    text-align: left;
+    grid-column: 1 / 4;
+    margin-bottom: 10px;
+}
+.question {
+    font-size: 18px;
+    color: black;
+}
+.body-card {
+    display: none;
+}
+.center {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination {
+    display: inline-block;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+.pagination a:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.pagination a:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+.pagination a:hover {
+    text-decoration: none;
+}
+#quesPrev,
+#quesNext:hover {
+    cursor: pointer;
+}
+.test-end {
+    width: 40%;
+    margin-left: 25%;
+}
+.countdown {
+    font-family: sans-serif;
+    color: #fff;
+    float: right;
+    font-weight: 100;
+    text-align: center;
+    font-size: 20px;
+}
+.countdown-number {
+    border-radius: 3px;
+    display: inline-block;
+} 
+.countdown-time {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 3px;
+    margin-left: 5px;
+    background: #4CAF50;
+    display: inline-block;
+}
+.none {
+    display: none;
+}
+#result-test{
+    color: black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: none;
+}
+#result-test > div {
+    width: 100%;
+}
+#result-test > div > ul > li {
+    float: left;
+    list-style: none;
+}
+#result-test > div > ul > li > h1 {
+    font-weight: bold;
+}
